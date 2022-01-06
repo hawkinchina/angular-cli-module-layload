@@ -17,10 +17,10 @@ const routes: Routes = [
   {
     path: '',
     component: ProductComponent,
-    // children: [
-    //   { path: 'list', component: ListComponent },
-    //   { path: 'price', component: PriceComponent },
-    // ],
+    children: [
+      { path: 'list', component: ListComponent },
+      { path: 'price', component: PriceComponent },
+    ],
   },
 ];
 @NgModule({
