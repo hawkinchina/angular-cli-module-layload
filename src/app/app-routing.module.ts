@@ -17,7 +17,23 @@ const routes: Routes = [
     redirectTo: '',
     pathMatch: 'full',
   },
-  { path: 'bill123', loadChildren: () => import('./module/bill/bill.module').then(m => m.BillModule) },
+  {
+    path: 'bill123',
+    loadChildren: () =>
+      import('./module/bill/bill.module').then((m) => m.BillModule),
+  },
+
+  {
+    path: 'product',
+    loadChildren: () =>
+      import('./module/product/product.module').then((m) => m.BillModule),
+  },
+
+  {
+    path: 'user',
+    loadChildren: () =>
+      import('./module/user/user.module').then((m) => m.BillModule),
+  },
 ];
 
 @NgModule({
