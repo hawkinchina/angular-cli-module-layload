@@ -26,13 +26,13 @@ const routes: Routes = [
   {
     path: 'product',
     loadChildren: () =>
-      import('./module/product/product.module').then((m) => m.BillModule),
+      import('./module/product/product.module').then((m) => m.ProductModule),
   },
 
   {
     path: 'user',
     loadChildren: () =>
-      import('./module/user/user.module').then((m) => m.BillModule),
+      import('./module/user/user.module').then((m) => m.UserModule),
   },
 ];
 
